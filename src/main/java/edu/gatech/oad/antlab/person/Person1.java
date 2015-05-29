@@ -1,9 +1,4 @@
 package edu.gatech.oad.antlab.person;
-/*************************
- *Name:Son Nguyen
- *
- *************************/
-
 /**
  *  A simple class for person 1
  *  returns their name and a
@@ -33,10 +28,10 @@ public class Person1 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) 
+	private String calc(String input) {
 	  //Person 1 put your implementation here
-	  StringBuilder NewStr = new String Builder(input);
-	  String OffsetStr = NewStr.subString(0,1);
+	  StringBuilder NewStr = new StringBuilder(input);
+	  String OffsetStr = NewStr.substring(0,1);
 	  NewStr.append(OffsetStr);
 	  return new String(NewStr.delete(0,1));
 	}
